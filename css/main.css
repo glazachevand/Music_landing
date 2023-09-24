@@ -821,7 +821,7 @@ section {
   opacity: 0.5;
 }
 
-.video {
+.video-tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,7 +834,7 @@ section {
   gap: 8px;
 }
 
-.video_red {
+.video-tab_red {
   color: var(--red-color);
 }
 
@@ -2102,7 +2102,7 @@ section {
 
 .dots_2 {
   top: 62px;
-  left: -60px;
+  left: -90px;
   width: 301px;
   height: auto;
   -webkit-transform: translateX(-100%);
