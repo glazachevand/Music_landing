@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Basic",
+    "tarif": "$100",
+    "description": "<p>1 Seat Available</p><p>Access to Wifi Router</p><p>Free Food & Coffee</p>",
+    "btnColor": "white"
+  },
+  {
+    "id": "2",
+    "title": "Standard",
+    "tarif": "$150",
+    "description": "<p>1 Seat Available</p><p>Access to Wifi Router</p><p>Free Food & Coffee</p>",
+    "btnColor": "blur"
+  },
+  {
+    "id": "3",
+    "title": "Premium",
+    "tarif": "$200",
+    "description": "<p>1 Seat Available</p><p>Access to Wifi Router</p><p>Free Food & Coffee</p>",
+    "btnColor": "white"
+  }
+]

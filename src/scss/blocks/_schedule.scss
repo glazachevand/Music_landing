@@ -1,0 +1,119 @@
+.schedule {
+  padding: 160px 0 120px;
+  background: linear-gradient(180deg, rgba(56, 29, 219, 0.05) 0%, rgba(56, 29, 219, 0) 100%);
+  @include mediaTablet {
+    padding: 80px 0 60px;
+  }
+  @include mediaMobile {
+    padding: 40px 15px 30px;
+  }
+  &__container {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 60px;
+    @include mediaMobile {
+      margin-bottom: 40px;
+    }
+  }
+  &__tabs {
+    margin-bottom: 40px;
+    @include mediaMobile {
+      margin-bottom: 30px;
+    }
+  }
+  &__tabscontent {
+    display: none;
+    &._active {
+      display: block;
+    }
+  }
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  li {
+    flex-grow: 1;
+  }
+  &__title {
+    opacity: 0.5;
+    color: var(--dark-color);
+    transition: all 0.2s ease-in;
+    .tab._active & {
+      opacity: 1;
+      color: var(--blur-color, #381ddb);
+      transition: all 0.2s ease-in;
+    }
+  }
+  &__data {
+    margin-bottom: 20px;
+    font-family: var(--font-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    opacity: 0.2;
+    @include mediaMobile {
+      font-size: 14px;
+    }
+    .tab._active & {
+      opacity: 0.5;
+      color: var(--blur-color, #381ddb);
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+.tab {
+  display: inline-block;
+  text-align: left;
+  border-bottom: 4px solid rgba($color: #381ddb, $alpha: 0.1);
+  cursor: pointer;
+  &._active {
+    border-bottom: 4px solid rgba($color: #381ddb, $alpha: 1);
+  }
+}
+.confetti {
+  &_8 {
+    top: 420px;
+    left: -187.5px;
+    width: 95px;
+    height: auto;
+    transform: translateX(-65%);
+    @media screen and (max-width: 1920px) {
+      left: var(--half);
+    }
+    @media screen and (max-width: 1700px) {
+      width: 80px;
+    }
+  }
+  &_9 {
+    top: 580px;
+    right: -187.5px;
+    width: 105px;
+    height: auto;
+    transform: translateX(90%);
+    @media screen and (max-width: 1920px) {
+      right: var(--half);
+    }
+    @media screen and (max-width: 1700px) {
+      width: 90px;
+    }
+  }
+  &_10 {
+    top: 670px;
+    right: -187.5px;
+    width: 110.4px;
+    height: auto;
+    transform: translateX(90%);
+    @media screen and (max-width: 1920px) {
+      right: var(--half);
+    }
+    @media screen and (max-width: 1700px) {
+      width: 92px;
+    }
+  }
+}

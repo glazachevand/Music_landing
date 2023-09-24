@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--page-bg);
+  color: var(--dark-color);
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.title1 {
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  color: var(--white-color, #fff);
+  @include mediaTablet {
+    font-size: 58px;
+  }
+  @include mediaMobile {
+    font-size: 36px;
+  }
+  @include mediaMobileS {
+    font-size: 26px;
+  }
+  & span {
+    color: var(--light-red-color, #ffa3a3);
+  }
+}
+
+.title2 {
+  font-family: var(--font-title);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+  @include mediaTablet {
+    font-size: 30px;
+  }
+  @include mediaMobile {
+    font-size: 28px;
+  }
+  @include mediaMobileS {
+    font-size: 26px;
+  }
+}
+
+.title3 {
+  font-family: var(--font-title);
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.58333;
+  @include mediaMobile {
+    font-size: 22px;
+  }
+  @include mediaMobileS {
+    font-size: 20px;
+  }
+}
+
+.title4 {
+  font-family: var(--font-title);
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.title5 {
+  font-family: var(--font-title);
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subtitle {
+  font-family: var(--font-text);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.58;
+  @include mediaMobile {
+    font-size: 20px;
+  }
+  @include mediaMobileS {
+    font-size: 18px;
+  }
+}
+.menu-font {
+  font-family: var(--font-title);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.confetti {
+  position: absolute;
+  z-index: 10;
+  @media screen and (max-width: 1540px) {
+    display: none;
+  }
+}
+
+section {
+  overflow: hidden;
+}

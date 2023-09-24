@@ -1,0 +1,81 @@
+.category {
+  padding: 90px 120px 38px 50px;
+  max-width: 370px;
+  border-radius: 24px;
+  transition: all 0.3s ease-out;
+  &:hover {
+    transition: all 0.3s ease-in;
+    svg {
+      fill: #fff;
+    }
+  }
+  &_1 {
+    background-color: rgba($color: #db841d, $alpha: 0.1);
+    svg {
+      fill: #db841d;
+    }
+    &:hover {
+      background-color: rgba($color: #db841d, $alpha: 1);
+    }
+  }
+  &_2 {
+    background-color: rgba($color: #fc5252, $alpha: 0.1);
+    svg {
+      fill: #fc5252;
+    }
+    &:hover {
+      background-color: rgba($color: #fc5252, $alpha: 1);
+    }
+  }
+  &_3 {
+    background-color: rgba($color: #381ddb, $alpha: 0.1);
+    svg {
+      fill: #381ddb;
+    }
+    &:hover {
+      background-color: rgba($color: #381ddb, $alpha: 1);
+    }
+  }
+  &_4 {
+    background-color: rgba($color: #c00096, $alpha: 0.1);
+    svg {
+      fill: #c00096;
+    }
+    &:hover {
+      background-color: rgba($color: #c00096, $alpha: 1);
+    }
+  }
+  &_5 {
+    background-color: rgba($color: #84c4ff, $alpha: 0.1);
+    svg {
+      fill: #84c4ff;
+    }
+    &:hover {
+      background-color: rgba($color: #84c4ff, $alpha: 1);
+    }
+  }
+  &__content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 30px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    p {
+      opacity: 0.7;
+    }
+  }
+  svg {
+    width: 40px;
+    height: 40px;
+    &:hover,
+    & path:hover {
+      fill: #fff;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.button {
+  display: inline-flex;
+  padding: 18px 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 8px;
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease-in,
+    color 0.2s ease-in;
+  @include mediaMobile {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+  @include mediaMobileS {
+    font-size: 12px;
+    padding: 10px 14px;
+    border-radius: 6px;
+  }
+}
+
+.button_blur {
+  background-color: var(--blur-color, #381ddb);
+  color: #fff;
+  opacity: 1;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in;
+  }
+}
+
+.button_white {
+  color: var(--blur-color, #381ddb);
+  background-color: #fff;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #e0e0e0;
+    transition: background-color 0.2s ease-in;
+  }
+}

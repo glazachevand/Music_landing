@@ -1,0 +1,71 @@
+.pricing {
+  padding: 120px 0;
+  @include mediaTablet {
+    padding: 60px;
+  }
+  @include mediaMobile {
+    padding: 30px 15px;
+  }
+  &__container {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+    @include mediaMobile {
+      margin-bottom: 40px;
+    }
+  }
+}
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  @include mediaTablet {
+    flex-direction: column;
+  }
+  &__card {
+    flex-grow: 1;
+    @include mediaTablet {
+      width: 100%;
+    }
+  }
+}
+.confetti {
+  &_11 {
+    top: 51px;
+    left: -187.5px;
+    width: 40px;
+    height: auto;
+    transform: translateX(-35%);
+    @media screen and (max-width: 1920px) {
+      left: var(--half);
+    }
+    @media screen and (max-width: 1700px) {
+      width: 30px;
+    }
+  }
+  &_12 {
+    top: 186px;
+    left: -187.5px;
+    width: 26px;
+    height: auto;
+    transform: translateX(282%);
+    @media screen and (max-width: 1920px) {
+      left: var(--half);
+    }
+  }
+  &_13 {
+    top: -100px;
+    right: -187.5px;
+    width: 54.36px;
+    height: auto;
+    transform: translateX(-80%);
+    @media screen and (max-width: 1920px) {
+      right: var(--half);
+    }
+    @media screen and (max-width: 1700px) {
+      width: 45px;
+    }
+  }
+}

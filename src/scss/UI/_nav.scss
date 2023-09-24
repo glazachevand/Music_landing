@@ -1,0 +1,56 @@
+.nav {
+  margin-left: auto;
+  @include mediaMobile {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    @include mediaTablet {
+      column-gap: 20px;
+    }
+    a {
+      display: block;
+      color: #fff;
+      transition: all 0.2s ease-in;
+      &:hover,
+      &:active {
+        color: #ffcdcd;
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+  &__submenu {
+    position: relative;
+    &:hover {
+      .nav__submenu-list {
+        display: block;
+      }
+      svg {
+        transform: rotate(180deg);
+        transition: all 0.2s ease;
+      }
+    }
+    svg {
+      transition: all 0.2s ease;
+    }
+  }
+  &__submenu-title {
+    display: inline-flex;
+    gap: 8px;
+  }
+  &__submenu-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 20;
+    a {
+      padding-top: 10px;
+      text-transform: none;
+      opacity: 0.8;
+    }
+  }
+}
