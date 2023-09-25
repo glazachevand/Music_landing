@@ -89,6 +89,8 @@ input[type=submit] {
 
 input:focus,
 input:active,
+textarea:focus,
+textarea:active,
 button:focus,
 button:active {
   outline: none;
@@ -1313,11 +1315,11 @@ section {
   right: 56px;
 }
 
-.message-line {
+.active {
   border-bottom: 1px solid var(--blur-color, #381ddb);
 }
 
-.message-line label {
+.active label {
   color: var(--blur-color, #381ddb);
 }
 
