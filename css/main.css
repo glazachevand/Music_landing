@@ -165,7 +165,58 @@ html {
 }
 
 .title1 span {
-  color: var(--light-red-color, #ffa3a3);
+  -webkit-animation: glow 7s linear infinite;
+  animation: glow 7s linear infinite;
+}
+
+.title1 > span:nth-of-type(2) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.title1 > span:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.title1 > span:nth-of-type(4) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.title1 > span:nth-of-type(5) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.title1 > span:nth-of-type(6) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.title1 > span:nth-of-type(7) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+@-webkit-keyframes glow {
+  0%, 100% {
+    color: #ffa3a3;
+  }
+
+  10%, 90% {
+    color: #fff;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #ffa3a3;
+  }
+
+  10%, 90% {
+    color: #fff;
+  }
 }
 
 .title2 {
