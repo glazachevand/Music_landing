@@ -40,7 +40,40 @@ html {
     font-size: 26px;
   }
   & span {
-    color: var(--light-red-color, #ffa3a3);
+    animation: glow 7s linear infinite;
+  }
+
+  & > span:nth-of-type(2) {
+    animation-delay: 1s;
+  }
+
+  & > span:nth-of-type(3) {
+    animation-delay: 2s;
+  }
+  & > span:nth-of-type(4) {
+    animation-delay: 3s;
+  }
+
+  & > span:nth-of-type(5) {
+    animation-delay: 4s;
+  }
+
+  & > span:nth-of-type(6) {
+    animation-delay: 5s;
+  }
+
+  & > span:nth-of-type(7) {
+    animation-delay: 6s;
+  }
+}
+@keyframes glow {
+  0%,
+  100% {
+    color: #ffa3a3;
+  }
+  10%,
+  90% {
+    color: #fff;
   }
 }
 
