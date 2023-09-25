@@ -14,7 +14,8 @@
     svg {
       fill: #db841d;
     }
-    &:hover {
+    &:hover,
+    &.swiper-slide-active {
       background-color: rgba($color: #db841d, $alpha: 1);
     }
   }
@@ -23,7 +24,8 @@
     svg {
       fill: #fc5252;
     }
-    &:hover {
+    &:hover,
+    &.swiper-slide-active {
       background-color: rgba($color: #fc5252, $alpha: 1);
     }
   }
@@ -32,7 +34,8 @@
     svg {
       fill: #381ddb;
     }
-    &:hover {
+    &:hover,
+    &.swiper-slide-active {
       background-color: rgba($color: #381ddb, $alpha: 1);
     }
   }
@@ -41,7 +44,8 @@
     svg {
       fill: #c00096;
     }
-    &:hover {
+    &:hover,
+    &.swiper-slide-active {
       background-color: rgba($color: #c00096, $alpha: 1);
     }
   }
@@ -50,7 +54,8 @@
     svg {
       fill: #84c4ff;
     }
-    &:hover {
+    &:hover,
+    &.swiper-slide-active {
       background-color: rgba($color: #84c4ff, $alpha: 1);
     }
   }
@@ -77,5 +82,8 @@
     & path:hover {
       fill: #fff;
     }
+  }
+  &.swiper-slide-active svg path {
+    fill: #fff;
   }
 }
