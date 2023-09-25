@@ -380,7 +380,8 @@ section {
   fill: #db841d;
 }
 
-.category_1:hover {
+.category_1:hover,
+.category_1.swiper-slide-active {
   background: #db841d;
 }
 
@@ -392,7 +393,8 @@ section {
   fill: #fc5252;
 }
 
-.category_2:hover {
+.category_2:hover,
+.category_2.swiper-slide-active {
   background: #fc5252;
 }
 
@@ -404,7 +406,8 @@ section {
   fill: #381ddb;
 }
 
-.category_3:hover {
+.category_3:hover,
+.category_3.swiper-slide-active {
   background: #381ddb;
 }
 
@@ -416,7 +419,8 @@ section {
   fill: #c00096;
 }
 
-.category_4:hover {
+.category_4:hover,
+.category_4.swiper-slide-active {
   background: #c00096;
 }
 
@@ -428,7 +432,8 @@ section {
   fill: #84c4ff;
 }
 
-.category_5:hover {
+.category_5:hover,
+.category_5.swiper-slide-active {
   background: #84c4ff;
 }
 
@@ -472,6 +477,10 @@ section {
 
 .category svg:hover,
 .category svg path:hover {
+  fill: #fff;
+}
+
+.category.swiper-slide-active svg path {
   fill: #fff;
 }
 
